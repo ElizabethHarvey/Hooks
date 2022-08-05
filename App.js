@@ -1,37 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import { Text, View, Button, StyleSheet} from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
 
-function App() {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    console.log( `You clicked ${count} times`);
-  });
-
+export default function App() {
   return (
-    <View style={styles.clicker}>
-      <Text>You Clicked {count} times</Text>
-      <Button onPress={() => setCount(count + 1)} title = 'Click me'></Button>
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <StatusBar style="auto" />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  clicker: {
+  container: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    bottom: 59,
-  }})
-
-export default App;
-
-
-// useEffect lets us perform side effects in function components.
-// Side effects are when we need to reach into the outside world. Such as fetching data from an API or working with the DOM.
-//  useEffect accepts a callback function (called the 'effect' function), which will by default run every time the component re-renders.
-
-
-// What is a side-effect: If the functional component makes calculations =>
-// that don't target the output value, then these calculations are named side-effects.
+  },
+});
