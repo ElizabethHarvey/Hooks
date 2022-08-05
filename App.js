@@ -1,10 +1,18 @@
-// import { StatusBar } from 'expo-status-bar';
+import React, { useId } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import UseIdHook from './Hooks/UseIdHook';
+import UseMemoHook from './Hooks/UseMemoHook';
 
-// import useMemoHook from './hooks/UseMemoHook';
-import React, { useMemo, useState } from 'react';
-import { StyleSheet, Button, Text, View, TouchableOpacity } from 'react-native';
-import UseMemoHook from './hooks/UseMemoHook';
-
-export default function App() {
-  return UseMemoHook()
+function App() {
+  return <UseMemoHook/>
 }
+
+const styles = StyleSheet.create({
+  view: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
+
+export default App;
