@@ -4,7 +4,7 @@ import UseIdHook from './Hooks/UseIdHook';
 import UseMemoHook from './Hooks/UseMemoHook';
 
 function App() {
-  return <UseMemoHook/>
+  return <UseMemoHook />;
 }
 
 const styles = StyleSheet.create({
