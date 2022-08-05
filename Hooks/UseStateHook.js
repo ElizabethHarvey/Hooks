@@ -11,6 +11,10 @@ function StateHook() {
     setCount((c) => c + 1); // increments the count / adds 1 to the initial state or current state
   };
 
+  const decrement = () => {
+    setCount((c) => c - 1) // decrements the count / subtracts 1 to the initial state or current state
+  }
+
   return (
     <View style={styles.container}>
       <Text>You clicked {count} times</Text>
@@ -22,6 +26,9 @@ function StateHook() {
             // react will re render passing th new count value to it
           }
         </Text>
+        <TouchableOpacity onPress={decrement} >
+          <Text>-</Text>
+        </TouchableOpacity>
       </TouchableOpacity>
     </View>
   );
