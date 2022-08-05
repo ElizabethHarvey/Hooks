@@ -13,5 +13,5 @@ In the following example, the expensive function will only run when count is cha
 
 UseState()
 
-useState() is used to track in a function components 
+useState() is used to track state in a function components 
 
