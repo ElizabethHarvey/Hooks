@@ -38,6 +38,10 @@ const styles = StyleSheet.create({
 
 export default StateHook;
 
-// You will need to use useState if you need to update a value 
+// When to use useState 
+// if you need to update a value 
 // adding or subtracting
 // true or false 
+
+// When not to use it 
+// if there are more than one sub values
