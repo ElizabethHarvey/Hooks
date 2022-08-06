@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import UseEffectHook from "./Hooks/UseEffectHook";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <UseEffectHook />
     </View>
   );
 }
@@ -18,12 +18,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
-import UseStateHook from './Hooks/UseStateHook'
-import UseReducerHook from './Hooks/UseReducerHook'
 
-export default function App() {
- return (
-  // <UseStateHook />
-  <UseReducerHook />
- )
-}
+
+
