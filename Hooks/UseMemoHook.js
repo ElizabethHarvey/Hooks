@@ -14,6 +14,8 @@ export default function UseMemoHook() {
     setTest((c) => c + 1);
   };
 
+
+  
   return (
     <>
       <View style={styles.view}>
