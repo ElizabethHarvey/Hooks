@@ -14,6 +14,8 @@ export default function UseMemoHook() {
     setTest((c) => c + 1);
   };
 
+
+  
   return (
     <>
       <View style={styles.view}>
@@ -36,7 +38,7 @@ export default function UseMemoHook() {
 const expensiveOperation = (num) => {
   console.log('Calculating...');
 
-  for (let i = 0; i < 100000000; i++) {
+  for (let i = 0; i < 1000000000; i++) {
     num += 1;
   }
   return num;
