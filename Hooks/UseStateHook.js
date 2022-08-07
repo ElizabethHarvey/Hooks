@@ -12,8 +12,8 @@ function StateHook() {
   };
 
   const decrement = () => {
-    setCount((c) => c - 1) // decrements the count / subtracts 1 to the initial state or current state
-  }
+    setCount((c) => c - 1); // decrements the count / subtracts 1 to the initial state or current state
+  };
 
   return (
     <View style={styles.container}>
@@ -26,9 +26,9 @@ function StateHook() {
             // react will re render passing th new count value to it
           }
         </Text>
-        <TouchableOpacity onPress={decrement} >
-          <Text>-</Text>
-        </TouchableOpacity>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={decrement}>
+        <Text>-</Text>
       </TouchableOpacity>
     </View>
   );
@@ -45,10 +45,10 @@ const styles = StyleSheet.create({
 
 export default StateHook;
 
-// When to use useState 
-// if you need to update a value 
+// When to use useState
+// if you need to update a value
 // adding or subtracting
-// true or false 
+// true or false
 
-// When not to use it 
+// When not to use it
 // if there are more than one sub values

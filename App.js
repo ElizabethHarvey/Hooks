@@ -3,7 +3,7 @@ import UseReducerHook from './Hooks/UseReducerHook'
 
 export default function App() {
  return (
-  // <UseStateHook />
-  <UseReducerHook />
+  <UseStateHook />
+  // <UseReducerHook />
  )
 }
