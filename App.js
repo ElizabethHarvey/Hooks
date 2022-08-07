@@ -1,10 +1,13 @@
 import React, { useId } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import UseIdHook from './Hooks/UseIdHook';
-import UseMemoHook from './Hooks/UseMemoHook';
+import UseEffectHook from "./Hooks/UseEffectHook";
 
-function App() {
-  return <UseMemoHook />;
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <UseEffectHook />
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -15,4 +18,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+
+
