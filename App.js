@@ -8,7 +8,7 @@ export default function App() {
   // <UseReducerHook />
  )
 }
-
+ 
 const styles = StyleSheet.create({
   view: {
     flex: 1,
