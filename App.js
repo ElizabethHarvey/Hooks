@@ -10,7 +10,7 @@ export default function App() {
 }
  
 const styles = StyleSheet.create({
-  view: {
+  view: { 
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
@@ -19,3 +19,4 @@ const styles = StyleSheet.create({
 
 
 
+  
