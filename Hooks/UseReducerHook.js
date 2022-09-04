@@ -1,28 +1,35 @@
-// import { useReducer } from 'react';
-// import { TouchableOpacity } from 'react-native';
+import { useReducer } from 'react';
+import { Text, TouchableOpacity } from 'react-native';
 
-// const initialState = {count: 0};
+function UseReducerHook() {
 
-// function reducer(state, action) {
-//   switch (action.type) {
-//     case 'increment':
-//       return {count: state.count + 1};
-//     case 'decrement':
-//       return {count: state.count - 1};
-//     default:
-//       throw new Error();
-//   }
-// }
+  const reducer = (state, action) => {
+    let newState;
+    switch (action.type) {
+      case 'increase':
+        newState = { counter: state.counter + 1 };
+     break;
+     
+    
+    }
+    return newState;
+  }
 
-// function useReducerHook() {
-//   const [state, dispatch] = useReducer(reducer, initialState);
-//   return (
-//     <>
-//       Count: {state.count}
-//       <TouchableOpacity onPress={() => dispatch({type: 'decrement'})}>-</TouchableOpacity>
-//       <TouchableOpacity onPress={() => dispatch({type: 'increment'})}>+</TouchableOpacity>
-//     </>
-//   );
-// }
+  const initialState = {
+    counter: 0
+  }
 
-// export default useReducerHook;
+  const [state, dispatch] = useReducer(reducer, initialState);
+  const action = {
+    type: 'increase'
+  };
+  console.log(state)
+  return (
+    <TouchableOpacity onPress={() => dispatch(action)}>
+     
+      <Text>+</Text>
+    </TouchableOpacity>
+  );
+}
+
+export default UseReducerHook;
