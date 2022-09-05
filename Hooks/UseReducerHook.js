@@ -20,15 +20,20 @@ function UseReducerHook() {
   const action = {
     type: 'increase',
   };
-  console.log(state);
+  // console.log(state);
   return (
     <>
-      <Text>{state.counter}</Text>
+      <Text style={{fontSize: 30}}>{state.counter}</Text>
       <TouchableOpacity onPress={() => dispatch(action)}>
-        <Text>+</Text>
+        <Text style={{fontSize: 30}}>+</Text>
       </TouchableOpacity>
     </>
   );
 }
 
 export default UseReducerHook;
+
+// useReducer is usually preferable to useState 
+// when you have complex state logic that involves 
+// multiple sub-values or when the next state depends 
+// on the previous one

@@ -17,9 +17,9 @@ function StateHook() {
 
   return (
     <View style={styles.container}>
-      <Text>You clicked {count} times</Text>
+      <Text style={{fontSize: 30}}>You clicked {count} times</Text>
       <TouchableOpacity onPress={increment}>
-        <Text>
+        <Text style={{fontSize: 30}}>
           +
           {
             // when clicked we call the setCount with a new value
@@ -28,7 +28,7 @@ function StateHook() {
         </Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={decrement}>
-        <Text>-</Text>
+        <Text style={{fontSize: 30}}>-</Text>
       </TouchableOpacity>
     </View>
   );

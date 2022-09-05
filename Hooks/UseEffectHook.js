@@ -10,21 +10,14 @@ function UseEffectHook() {
 
   return (
     <View style={styles.clicker}>
-      <Text>You Clicked {count} times</Text>
+      <Text style={{fontSize: 30}}>You Clicked {count} times</Text>
       {/* {console.log( `You clicked ${count} times`)} */}
-      <Button onPress={() => setCount(count + 1)} title = 'Click me'></Button>
+      <Button style={{fontSize: 30}} onPress={() => setCount(count + 1)} title = 'Click me'></Button>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  clicker: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    bottom: 59,
-  }})
+
 
 export default UseEffectHook;
 

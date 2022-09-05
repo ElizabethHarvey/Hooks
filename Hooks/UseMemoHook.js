@@ -19,17 +19,17 @@ export default function UseMemoHook() {
   return (
     <>
       <View style={styles.view}>
-        <Text>Count: {count}</Text>
+        <Text style={{fontSize: 30}}>Count: {count}</Text>
         <TouchableOpacity onPress={increment}>
-          <Text>+</Text>
+          <Text style={{fontSize: 30}}>+</Text>
         </TouchableOpacity>
         <Text>Expensive Operation: {operation}</Text>
       </View>
 
       <View style={styles.view}>
-        <Text>Count: {test}</Text>
+        <Text style={{fontSize: 30}}>Count: {test}</Text>
         <TouchableOpacity onPress={testIncrement}>
-          <Text>+</Text>
+          <Text style={{fontSize: 30}}>+</Text>
         </TouchableOpacity>
       </View>
     </>
