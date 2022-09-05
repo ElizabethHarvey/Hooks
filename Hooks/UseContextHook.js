@@ -22,7 +22,7 @@ function UseContextHook(props) {
           <TouchableOpacity
             style={{ alignItems: 'center' }}
             disabled={size === 11}
-            onPress={() => Math.min(11, setSize(size - 5))}
+            onPress={() => (setSize(size - 5))}
           >
             <Text style={{ fontSize: 50 }}>-</Text>
           </TouchableOpacity>
