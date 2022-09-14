@@ -5,12 +5,19 @@ import UseReducerHook from './Hooks/UseReducerHook';
 import UseTransitionHook from './Hooks/UseTransitionHook';
 import HeavyComponent from './components/HeavyComponent';
 import UseContextHook from './Hooks/UseContextHook';
+import UseCallbackHook from './Hooks/UseCallbackHook';
+import UseRefHook from './Hooks/UseRefHook';
+import UseLayoutEffect from './Hooks/UseLayoutEffect';
+import UseMemoHook from './Hooks/UseMemoHook';
+import UseDebugValueHook from './Hooks/UseDebugvalueHook';
+import UseDeferredValueHook from './Hooks/UseDeferredValueHook';
+
 
 export default function App() {
   return (
     // <UseStateHook />
     <View style={styles.view}>
-      <UseContextHook />
+      <UseDeferredValueHook />
     </View>
   );
 }

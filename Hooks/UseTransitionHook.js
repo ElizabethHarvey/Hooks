@@ -18,8 +18,6 @@ function UseTransitionHook(props) {
       <TouchableOpacity onPress={handleClick}>
         <Text style={{fontSize: 30}}>+</Text>
       </TouchableOpacity>
-      
-    
     </View>
   );
 }

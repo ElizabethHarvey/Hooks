@@ -2,29 +2,20 @@ import { useState } from 'react'; // import useState from react / lets us keep t
 import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
 
 function StateHook() {
-  const [count, setCount] = useState(0); // were declaring a new variable
-  // 0 is the initial value the button clicks start off with
-  // count holds the number of button clicks
-  // setCount lets us update the count of the initial state
+  const [count, setCount] = useState(0); 
 
   const increment = () => {
-    setCount((c) => c + 1); // increments the count / adds 1 to the initial state or current state
+    setCount((c) => c + 1); 
   };
-
   const decrement = () => {
-    setCount((c) => c - 1); // decrements the count / subtracts 1 to the initial state or current state
+    setCount((c) => c - 1); 
   };
-
   return (
     <View style={styles.container}>
       <Text style={{fontSize: 30}}>You clicked {count} times</Text>
       <TouchableOpacity onPress={increment}>
         <Text style={{fontSize: 30}}>
           +
-          {
-            // when clicked we call the setCount with a new value
-            // react will re render passing th new count value to it
-          }
         </Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={decrement}>

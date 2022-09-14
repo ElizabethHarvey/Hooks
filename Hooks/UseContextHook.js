@@ -33,3 +33,13 @@ function UseContextHook(props) {
 }
 
 export default UseContextHook;
+
+// The React Context API provides
+// a way to share states or 
+// data throughout the React component
+// tree.
+
+// The API makes data sharing between 
+// components easy while eliminating 
+// prop drilling.
+
